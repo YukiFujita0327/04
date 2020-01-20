@@ -6,12 +6,11 @@
 /*   By: yufujita <yufujita@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/18 10:52:47 by yufujita          #+#    #+#             */
-/*   Updated: 2020/01/21 04:57:51 by yufujita         ###   ########.fr       */
+/*   Updated: 2020/01/21 05:05:55 by yufujita         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 int		write_int_limit(int nb)
 {
@@ -46,7 +45,6 @@ void	ft_putnbr(int nb)
 	if (nb == 0)
 		write(1, "0", 1);
 	minus_write(&nb);
-	printf("print:%d\n", nb);
 	n = 0;
 	while (nb != 0)
 	{
